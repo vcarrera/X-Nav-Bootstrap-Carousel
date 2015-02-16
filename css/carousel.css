@@ -1,10 +1,20 @@
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
+html {
+    width: 100%;
+    heigth: 100%;
+}
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+    width: 100%;
+    heigth: 100%;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    padding:0;
+    margin:0;
+    background:#888;
 }
 
 
@@ -13,7 +23,7 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -32,8 +42,12 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
-
-
+#cabecera{
+    display: table; margin: 0 auto;
+}
+#cabecera img{
+    margin-top: 20px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -99,7 +113,7 @@ body {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
@@ -131,4 +145,23 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+/*Bootsnipp
+ - ------------------------------------------------- */
+.error-notice {
+    margin: 5px 5px; /* Making sure to keep some distance from all side */
+}
+
+.oaerror {
+    width: 90%; /* Configure it fit in your design  */
+    margin: 0 auto; /* Centering Stuff */
+    background-color: #FFFFFF; /* Default background */
+    padding: 20px;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
