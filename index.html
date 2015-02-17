@@ -16,6 +16,7 @@
   <!-- NAVBAR
 ================================================== -->
   <body>
+  <div id="navegabar">
     <div class="navbar-wrapper">
       <div class="container">
       <div id="cabecera">
@@ -39,9 +40,10 @@
 
       </div>
     </div>
-    
+   </div>
     <!-- Carousel
     ================================================== -->
+    <div id="fotocarrusel"> 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -81,66 +83,78 @@
         <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->
-    
+    </div>
      <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+    <div id="servicios">
+    <div id="ocultador"></div>
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-        <img class="img-rounded" src="images/logoURJC.jpg" alt="logoURJC" style="width: 140px; height: 140px;">
-          <h2>Alumnos</h2>
+        <a class="boton" href="http://www.urjc.es/alumnos/" role="button"><img class="img-circle" src="images/student-icon.png" alt="logoURJC" style="width: 140px; height: 140px;">
+        <h2>Alumnos</h2></a>
           <p>Información para los alumnos</p>
-          <p><a class="btn btn-default" href="http://www.urjc.es/alumnos/" role="button">Ir Alumnos &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-        <img class="img-rounded" src="images/logoURJC.jpg" alt="logoURJC" style="width: 140px; height: 140px;">
-          <h2>Información</h2>
+        <a class="boton" href="http://www.urjc.es/informacion/"  role="button"><img class="img-circle" src="images/Get-Info-icon.png" alt="logoURJC" style="width: 140px; height: 140px;">
+        <h2>Información</h2></a>
           <p>Información general sobre la Universidad</p>
-          <p><a class="btn btn-default" href="http://www.urjc.es/informacion/" role="button">Ir a info de URJC &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-        <img class="img-rounded" src="images/logoURJC.jpg" alt="logoURJC" style="width: 140px; height: 140px;">
-          <h2>Titulaciones</h2>
+        <a  class="boton" href="http://www.urjc.es/estudios/" role="button"><img class="img-circle" src="images/bank-icon.png" alt="logoURJC" style="width: 140px; height: 140px;">
+        <h2>Titulaciones</h2></a>
           <p>Titulaciones que se imparten en la Universidad</p>
-          <p><a class="btn btn-default" href="http://www.urjc.es/estudios/" role="button">Ir a titulaciones &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-
+    </div>
      
       <!-- FOOTER -->
       <footer>
       <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 aplicaciones telematicas. &middot; <a href="#">Privacy</a>
+      <p class="pull-left">&copy; 2015 aplicaciones telematicas. &middot; <a href="#">Privacy</a>
       </footer>
 
     </div><!-- /.container -->
 
   <!--  Bootsnipp  
   ================================================== -->
-    <div class="container">
-        <div class="row">
-            <br><br>
-            <div class="error-notice">
-                <div class="oaerror danger">
-                    <strong>Error</strong> - You provided a wrong username/password
+  <div id="Bootsnipp">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="page-header">Comments</h2>
+            <section class="comment-list">
+            <!-- First Comment -->
+            <article class="row">
+                <div class="col-md-2 col-sm-2 hidden-xs">
+                    <figure class="thumbnail">
+                    <img class="img-responsive" src="images/logoURJC.jpg" />
+                        <figcaption class="text-center">ETSIT</figcaption>
+                    </figure>
                 </div>
-                <div class="oaerror warning">
-                    <strong>Error</strong> - You left a field Blank
+                <div class="col-md-10 col-sm-10">
+                    <div class="panel panel-default arrow left">
+                        <div class="panel-body">
+                            <header class="text-left">
+                            <div class="comment-user"><i class="fa fa-user"></i> ETSIT</div>
+                                <time class="comment-date" datetime="16-02-2015 01:05"><i class="fa fa-clock-o"></i> Feb 16, 2015</time>
+                            </header>
+                            <div class="comment-post">
+                                <p>El ETSIT os saluda a todos </p>
+                            </div>
+                            <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="oaerror info">
-                    <strong>Error</strong> - Please Select a Different Username
-                </div>
-                <div class="oaerror success">
-                    <strong>Yeppi</strong> - You are successfully registered. Please login.
-                </div>
-             </div>
+            </article>
+            </section>
         </div>
-    </div><!--  Bootsnipp  -->
-    
+    </div>
+  </div><!--  Bootsnipp2  -->
+</div>    
      <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

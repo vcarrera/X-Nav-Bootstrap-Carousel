@@ -11,10 +11,20 @@ body {
     width: 100%;
     heigth: 100%;
     padding-bottom: 40px;
-    color: #5a5a5a;
     padding:0;
     margin:0;
-    background:#888;
+    background:#0c142c;
+    background-image: url("../images/urjc_dsktp_alin_800x600.jpg");
+    background-size: 100% 100%,  auto, auto;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 
@@ -27,7 +37,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
+  z-index: 20;  
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -41,6 +51,7 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+  
 }
 #cabecera{
     display: table; margin: 0 auto;
@@ -53,8 +64,9 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 600px;
   margin-bottom: 60px;
+  z-index: 6;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -63,7 +75,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 600px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -71,7 +83,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 600px;
 }
 
 
@@ -79,6 +91,23 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
+ #ocultador {
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 5;
+ min-width: 100%;
+ height: 160px;
+ background:#0c142c;
+ }
+ 
+.boton:hover{
+    background:#0c142c;
+    opacity: 0.4;
+    filter: alpha(opacity=40)
+ }
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
@@ -149,19 +178,89 @@ body {
 
 /*Bootsnipp
  - ------------------------------------------------- */
-.error-notice {
-    margin: 5px 5px; /* Making sure to keep some distance from all side */
+./*font Awesome http://fontawesome.io*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*Comment List styles*/
+.comment-list .row {
+    margin-bottom: 0px;
 }
-
-.oaerror {
-    width: 90%; /* Configure it fit in your design  */
-    margin: 0 auto; /* Centering Stuff */
-    background-color: #FFFFFF; /* Default background */
-    padding: 20px;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+.comment-list .panel .panel-heading {
+    padding: 4px 15px;
+    position: absolute;
+    border:none;
+    /*Panel-heading border radius*/
+    border-top-right-radius:0px;
+    top: 1px;
+}
+.comment-list .panel .panel-heading.right {
+    border-right-width: 0px;
+    /*Panel-heading border radius*/
+    border-top-left-radius:0px;
+    right: 16px;
+}
+.comment-list .panel .panel-heading .panel-body {
+    padding-top: 6px;
+}
+.comment-list figcaption {
+    /*For wrapping text in thumbnail*/
+    word-wrap: break-word;
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 768px) {
+    .comment-list .arrow:after, .comment-list .arrow:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+    }
+    .comment-list .panel.arrow.left:after, .comment-list .panel.arrow.left:before {
+        border-left: 0;
+    }
+    /*****Left Arrow*****/
+    /*Outline effect style*/
+    .comment-list .panel.arrow.left:before {
+        left: 0px;
+        top: 30px;
+        /*Use boarder color of panel*/
+        border-right-color: inherit;
+        border-width: 16px;
+    }
+    /*Background color effect*/
+    .comment-list .panel.arrow.left:after {
+        left: 1px;
+        top: 31px;
+        /*Change for different outline color*/
+        border-right-color: #FFFFFF;
+        border-width: 15px;
+    }
+    /*****Right Arrow*****/
+    /*Outline effect style*/
+    .comment-list .panel.arrow.right:before {
+        right: -16px;
+        top: 30px;
+        /*Use boarder color of panel*/
+        border-left-color: inherit;
+        border-width: 16px;
+    }
+    /*Background color effect*/
+    .comment-list .panel.arrow.right:after {
+        right: -14px;
+        top: 31px;
+        /*Change for different outline color*/
+        border-left-color: #FFFFFF;
+        border-width: 15px;
+    }
+}
+.comment-list .comment-post {
+    margin-top: 6px;
+}
+#Bootsnipp{
+color:#000;
+text-shadow:
+-1px -1px 0 #fff,
+1px -1px 0 #fff,
+-1px 1px 0 #fff,
+1px 1px 0 #fff;
 }
